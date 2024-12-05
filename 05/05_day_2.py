@@ -26,7 +26,7 @@ with open("05_input.txt", "r") as f:
                 if rule[0] == update:
                     if rule[1] in updates and updates.index(rule[1]) <= u:
                         updates = sorted(updates, key=cmp_to_key(compare))
-                        result += updates[((len(updates) - 1) // 2)]
+                        result += updates[(len(updates) // 2)]
                         break
             else:
                 continue

@@ -19,6 +19,6 @@ with open("05_input.txt", "r") as f:
                 continue
             break
         if good:
-            result += updates[((len(updates) - 1) // 2)]
+            result += updates[(len(updates) // 2)]
 
 print(result)
